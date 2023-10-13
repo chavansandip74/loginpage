@@ -1,0 +1,85 @@
+<style>
+    body {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cont {
+        text-align: center;
+        width: 63%;
+        height: 80%;
+        border: 2px solid rgb(131, 56, 56);
+        background-color: rgb(196, 218, 210);
+        margin-left: 237px;
+        border-radius: 12px;
+        ;
+    }
+
+    b {
+        font-size: 25px;
+    }
+
+    .cont input {
+        height: 45px;
+
+        margin-top: 20px;
+        width: 300px;
+        border-radius: 12px;
+        border: 2px solid rgb(142, 165, 13);
+        box-shadow: 2px 0px 26px 9px rgb(54, 56, 58);
+    }
+
+    .text {
+        color: brown;
+    }
+
+    .btn {
+        margin-top: 20px;
+        height: 45px;
+        width: 140px;
+        color: black;
+        background-color: rgb(211, 199, 223);
+        border: 2px solid rgb(20, 20, 20);
+        border-radius: 20px;
+        font-size: 16px;
+        border-radius: 12px;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(201, 176, 68);
+        color: rgb(10, 9, 9);
+        cursor: pointer;
+    }
+</style>
+<br>
+<br>
+
+<body>
+    <form action="/save" method="post" action="home.ejs">
+        <div class="cont">
+            <h1 class="text"><b>-User Registration-</b></h1>
+
+            <b>Enter UserName:</b>
+            <input type="text" name="username" required>
+            <br> <br>
+
+            <b>Enter Email:</b>
+            <input type="email" name="useremail" required>
+            <br> <br>
+            <b>Enter Password:</b>
+            <input type="password" name="password" required>
+            <br> <br>
+            <b>Re-Enter Password:</b>
+            <input type="password" name="password1" required>
+            <br> <br>
+            <div>
+                <button class="btn">Register Now</button>
+            </div>
+        </div>
+    </form>
+</body>
+<br>
+<br>
+<br>
